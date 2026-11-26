@@ -1,0 +1,20 @@
+# Temp / output
+out.txt
+*.log
+scratch/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.python-version
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+
+# Keep .vscode/settings.json but ignore local overrides
+.vscode/*
+!.vscode/settings.json
