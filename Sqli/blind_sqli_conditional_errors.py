@@ -1,3 +1,9 @@
+"""Blind SQL injection with conditional errors.
+
+Lab:  https://portswigger.net/web-security/sql-injection/blind/lab-conditional-errors
+DBMS: Oracle
+"""
+
 import string
 from urllib.parse import quote
 
@@ -9,7 +15,9 @@ alphabet = list(string.ascii_lowercase + string.digits)
 # Lab instances are ephemeral, so these values expire. Replace before running:
 url = ""  # e.g. "https://<id>.web-security-academy.net/"
 tracking_id = ""  # value of the TrackingId cookie, e.g. "XXXXXXXXXXXXXXXX"
-session_cookie = ""  # value of the "session" cookie, e.g. "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+session_cookie = (
+    ""  # value of the "session" cookie, e.g. "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+)
 headers = {
     "Cache-Control": "max-age=0",
     "Sec-Ch-Ua": '"Not.A/Brand";v="24", "Chromium";v="158"',
