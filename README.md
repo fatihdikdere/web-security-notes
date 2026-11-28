@@ -6,11 +6,13 @@ understand each vulnerability class deeply enough to write exploitation code fro
 
 ## Structure
 
-| Folder   | Topic |
-|----------|-------|
-| `Sqli/`  | SQL injection (PortSwigger Web Security Academy labs) |
+| Folder             | Topic |
+|--------------------|-------|
+| `Sqli/`            | SQL injection (PortSwigger Web Security Academy labs) |
+| `Authentication/`  | Authentication & access control (enumeration, brute-force bypass, 2FA, token flaws) |
 
-More topics (XSS, SSRF, deserialization, authentication, ...) will be added as I work through them.
+Each folder has a `README.md` cheat sheet plus the solver scripts for that topic.
+More topics (XSS, SSRF, deserialization, ...) will be added as I work through them.
 
 ## Notes
 
